@@ -26,6 +26,6 @@ class AkiApplication: Application(), HasActivityInjector {
     }
 
     fun getStringABC(): String {
-        return "ABC"
+        return "ABCasfdasdfas"
     }
 }

@@ -26,6 +26,7 @@ class AkiApplication: Application(), HasActivityInjector {
     }
 
     fun getStringABC(): String {
-        return "ABCasfdasdfasasdfsdf"
+        val aasdfasdf = "asdfasdf"
+        return aasdfasdf
     }
 }

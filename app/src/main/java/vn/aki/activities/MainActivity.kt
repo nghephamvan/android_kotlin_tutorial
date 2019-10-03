@@ -1,8 +1,8 @@
 package vn.aki.activities
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_main.*
 import vn.aki.myapplication.R
@@ -21,8 +21,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tv_content.text = test
-                //baseContext.getText(R.string.hello_aki)
-
+        tv_content.setText(R.string.hello_aki)
     }
 }

@@ -21,6 +21,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tv_content.setText(R.string.hello_aki2)
+        tv_content.setText(R.string.hello_aki_update)
     }
 }

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">domain</string>
+    <string name="please_check_internet">Please check your internet connection and try again.</string>
+    <string name="an_error_occurred">An error occurred, please try again later</string>
+</resources>

@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Kotlin Learning</string>
-    <string name="hello_kotlin">Hello Kotlin!</string>
-    <string name="hello_aki">Hello Aki ⚽ ❤️️</string>
+    <string name="app_name">NewsFeeds</string>
+    <string name="please_waiting">Please waiting...</string>
+    <string name="news">News</string>
+    <string name="updated_time">Updated: %s</string>
+    <string name="no_results">No Results</string>
+    <string name="search">Search</string>
 </resources>

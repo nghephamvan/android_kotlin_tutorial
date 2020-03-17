@@ -1,19 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="vn.aki.activities.MainActivity">
+    android:background="@color/color_2"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".mainscreen.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_content"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="@color/color_6">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_38"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:background="@drawable/edittext_border"
+            android:fontFamily="sans-serif"
+            android:hint="@string/search"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_33"
+            android:paddingEnd="@dimen/dp_33"
+            android:singleLine="true"
+            android:textSize="@dimen/ts_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@id/edtSearch"
+            app:layout_constraintLeft_toLeftOf="@id/edtSearch"
+            app:layout_constraintTop_toTopOf="@id/edtSearch" />
+
+        <ImageView
+            android:id="@+id/icCloseSearch"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_remove"
+            app:layout_constraintBottom_toBottomOf="@id/edtSearch"
+            app:layout_constraintRight_toRightOf="@id/edtSearch"
+            app:layout_constraintTop_toTopOf="@id/edtSearch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_kotlin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
